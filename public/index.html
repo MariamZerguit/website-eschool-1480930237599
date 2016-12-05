@@ -1,26 +1,570 @@
 <!DOCTYPE html>
-<html>
-
+<html class="no-js">
   <head>
-    <title>NodeJS Starter Application</title>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>SCHEDULE ESCHOOL</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(html){html.className = html.className.replace(/no-js/,'js')})(document.documentElement);</script>
+    <meta name="robots" content="noindex,follow">
+    <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http://s.w.org/images/core/emoji/72x72/","ext":".png","source":{"concatemoji":"http://studios.somerslab.ibm.com/eschool/projects/wp-includes/js/wp-emoji-release.min.js?ver=4.2.4"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style> <link rel="stylesheet" id="BoxShortcodeVSA-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/plugins/box-shortcode/box-shortcode.css?ver=4.2.4"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="responsive-lightbox-tosrus-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/plugins/responsive-lightbox/assets/tosrus/css/jquery.tosrus.all.min.css?ver=1.6.3"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="genericons-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/genericons/genericons.css?ver=3.2"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="eschool-style-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/style.css?ver=4.2.4"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="fancybox_css-css" href="http://studios.somerslab.ibm.com/eschool/projects/js/fancybox/jquery.fancybox.css?ver=3.2"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="bootstrap-css-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/dist/css/bootstrap.css?ver=4.0.0.alpha"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="font-awesome-css-css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css?ver=4.4.0"
+      type="text/css"
+      media="all">
+    <link rel="stylesheet" id="b4st-css-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/theme/css/b4st.css"
+      type="text/css"
+      media="all">
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/ajaxcomments.js?ver=20141010"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/plugins/responsive-lightbox/assets/tosrus/js/jquery.tosrus.min.all.js?ver=1.6.3"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var rlArgs = {"script":"tosrus","selector":"lightbox","customEvents":"","activeGalleries":"1","effect":"slide","infinite":"0","keys":"1","autoplay":"1","pauseOnHover":"1","timeout":"6000","pagination":"1","paginationType":"thumbnails"};
+/* ]]> */
+</script> <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/plugins/responsive-lightbox/js/front.js?ver=1.6.3"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/js/js.cookie.js?ver=20150616"></script>
+    <link rel="canonical" href="http://studios.somerslab.ibm.com/eschool/projects/agenda/session-2/">
+    <script>
+		var siteurl = 'http://studios.somerslab.ibm.com/eschool/projects';
+		var currentwave = 6;
+		var userwave = '';
+		var squad = '';
+	</script>
+    <script src="//use.typekit.net/jof7miy.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
+  <body class="page page-id-4121 page-child parent-pageid-3950 page-template page-template-page-agenda page-template-page-agenda-php">
+    <div style="display:none;">Role squad</div>
+    <nav class="navbar navbar-topbar navbar-dark bg-primary"> <button class="navbar-toggler hidden-sm-up"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbar"
+        style="color:#000; position: absolute; right: 20px;">
+        ☰ </button> <a class="navbar-brand visible-xs-inline"><img src="http://studios.somerslab.ibm.com/eschool/projects/img_new/logo.png"
+          style="max-width:130px;"></a>
+      <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+        <ul id="menu-top" class="nav navbar-nav">
+          <li id="menu-item-4123" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4121 current_page_item active nav-item nav-item-4123"><a
+              href="https://website-eschool.stage1.mybluemix.net/index"
+              class="nav-link">Schedule</a></li>
+          <li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-3954"><a
+              href="https://website-eschool.stage1.mybluemix.net/teams"
+              class="nav-link">Teams</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="primary" class="content-area">
+      <main id="main" class="site-main" role="main">
+        <div id="agenda_heading_text">
+          <h1 class="agenda_title">Agenda</h1>
+        </div>
+        <div class="agenda days-container desktop" id="agenda-desktop">
+          <div class="desktop-day-toggle">
+            <div class="desktop-day-toggle-day">
+              <h4 class="desktop-day-of-the-week"> Jeudi </h4>
+              <h5 class="desktop-date"> 5 janvier </h5>
+            </div>
+            <div class="desktop-day-toggle-day">
+              <h4 class="desktop-day-of-the-week"> Vendredi </h4>
+              <h5 class="desktop-date"> 6 janvier </h5>
+            </div>
+          </div>
+          <div class="desktop-agenda-list">
+            <div class="desktop-agenda-list-day">
+              <div class="daily-activity-title">On Engagement</div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="9:00 am" class="desktop-agenda-list-time">
+                    9:00 </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-description">
+                    <p>Welcome &amp; Introduction </p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Sophie Stanton</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="9:15 am" class="desktop-agenda-list-time">9:15
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-description">
+                    <p>Model of Engagement </p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Véronique Blondelle</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="9:30 am" class="desktop-agenda-list-time">9:30
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Video</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Culture of Engagement</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Keith Yamashita</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="9:50 am" class="desktop-agenda-list-time">9:50
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Master Class</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Psychology of Belief</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Natalie rastoin /
+                    benoit de fleurian</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="10:50 am" class="desktop-agenda-list-time">10:50
+                    </div> </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Take a breather</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>BREAK</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details"> </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="11:00 am" class="desktop-agenda-list-time">11:00
+                    </div> </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Master Class</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Persuasive Argumentation</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">isabelle wache /
+                    sylvie aubert</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="12:00 pm" class="desktop-agenda-list-time">12:00
+                    </div> </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-description">
+                    <p>Lunch</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details"> </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="1:00 pm" class="desktop-agenda-list-time">1:00
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Critique</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Critique for Persuasiveness</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Maker space </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Faculty / Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Coaches</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="2:00 pm" class="desktop-agenda-list-time">2:00
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Master Class</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Techniques in Editing</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Faculty / Speaker</div>
+                  <div class="desktop-agenda-list-faculty">isabelle wache /
+                    sylvie aubert</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="2:30 pm" class="desktop-agenda-list-time">2:30
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Take a breather</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>BREAK</p>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="2:45 pm" class="desktop-agenda-list-time">2:45
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Master Class</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>KPI Digital</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Petit Amphi </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Speaker</div>
+                  <div class="desktop-agenda-list-faculty">Delphine Guedj /<br>
+                    Guillaume de la Flechere</div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="3:45 pm" class="desktop-agenda-list-time">3:45
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Exercise</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Digital Funnel</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">maker space</div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading"><br>
+                  </div>
+                  <div class="desktop-agenda-list-location"><br>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="4:00 pm" class="desktop-agenda-list-time">4:00
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-title heading">Writing</div>
+                  <div class="desktop-agenda-list-description">
+                    <p>Make language simpler and more meaningful</p>
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column details">
+                  <div class="heading">Location</div>
+                  <div class="desktop-agenda-list-location">Maker Space </div>
+                </div>
+                <div class="desktop-agenda-list-column details"> </div>
+              </div>
+              <div class="desktop-agenda-list-activity">
+                <div class="desktop-agenda-list-column time">
+                  <div data-time="5:00 pm" class="desktop-agenda-list-time">5:00
+                  </div>
+                </div>
+                <div class="desktop-agenda-list-column title">
+                  <div class="desktop-agenda-list-description">
+                    <p>Fin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-agenda-list">
+            <div class="desktop-agenda-list-day">
+              <div class="daily-activity-title">Compel your audience to act</div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="9:00 am" class="desktop-agenda-list-time">9:00 </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-title heading">Writing</div>
+                <div class="desktop-agenda-list-description">
+                  <p>Finalize Speeches</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">Maker space </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading"><br>
+                </div>
+                <div class="desktop-agenda-list-location"><br>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="10:00 am" class="desktop-agenda-list-time">10:00
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-title heading">Speech Selection</div>
+                <div class="desktop-agenda-list-description">
+                  <p>Vote your team's winning speech</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">maker space </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading"><br>
+                </div>
+                <div class="desktop-agenda-list-location"><br>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="10:15 pm" class="desktop-agenda-list-time">10:15
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-title heading">Take a breather</div>
+                <div class="desktop-agenda-list-description">
+                  <p>BREAK</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="10:30 am" class="desktop-agenda-list-time">10:30
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-title heading">Winning Speech
+                  Delivery</div>
+                <div class="desktop-agenda-list-description">
+                  <p>Compel your audience to act</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">Petit Amphi </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="desktop-agenda-list-faculty"><br>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="11:30 pm" class="desktop-agenda-list-time">11:30
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-title heading">Master Class</div>
+                <div class="desktop-agenda-list-description">
+                  <p>Bringing it all together</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">Petit Amphi </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Speaker</div>
+                <div class="desktop-agenda-list-location">thu trang nguyen</div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="12:00 pm" class="desktop-agenda-list-time">12:00
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-description">
+                  <p>Wrap up</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">Petit amphi</div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Speaker</div>
+                <div class="desktop-agenda-list-location">TBN</div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="12:00 pm" class="desktop-agenda-list-time">12:15
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-description">
+                  <p>Lunch</p>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="13:15 pm" class="desktop-agenda-list-time">13:15</div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-description">
+                  <p>Team building</p>
+                </div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Location</div>
+                <div class="desktop-agenda-list-location">TBD</div>
+              </div>
+              <div class="desktop-agenda-list-column details">
+                <div class="heading">Speaker</div>
+                <div class="desktop-agenda-list-location">TBN</div>
+              </div>
+            </div>
+            <div class="desktop-agenda-list-activity">
+              <div class="desktop-agenda-list-column time">
+                <div data-time="5:00 pm" class="desktop-agenda-list-time">4:00 </div>
+              </div>
+              <div class="desktop-agenda-list-column title">
+                <div class="desktop-agenda-list-description">
+                  <p>Fin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <div class="desktop-agenda-list-view">
+																<a class="desktop-agenda-extras materials" href="">View Materials</a>															</div> -->
+    <!-- .site-main -->
+    <!-- .content-area -->
+    <script>
+if (window.innerWidth <= 700){
+	jQuery('#menu-top li, #menu-assignment li').css('width','100%');
+}
+</script> <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="page_width"> <img class="alignnone wp-image-245" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/uploads/2015/06/eschool_logo.png"
+          alt="eschool_logo"
+          height="37"
+          width="37">
+        <div class="contact"> </div>
+        <div class="ibm_logo"> <img id="footer_eschool_logo" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/images/eschool_logo.png">
+          <img id="footer_ibm_logo" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/images/eschool_ibm_8bar-blk.png">
+        </div>
+      </div>
+    </footer>
+    <!-- .site-footer --><br>
+    <br>
+    <br>
+    <link rel="stylesheet" id="eschool-css-css" href="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/eschool.css?ver=4.2.4"
+      type="text/css"
+      media="all">
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/js/skip-link-focus-fix.js?ver=20141010"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-includes/js/comment-reply.min.js?ver=4.2.4"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/js/jquery.waypoints.min.js?ver=20150526"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/js/agenda.js?ver=20150506"></script>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class="screen-reader-text">expand child menu</span>","collapse":"<span class="screen-reader-text">collapse child menu</span>"};
+/* ]]> */
+</script> <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/js/functions.js?ver=/var/www/html/eschool/projects/wp-content/themes/b4st-master/js/functions.js"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/js/fancybox/jquery.fancybox.pack.js?ver=20150617"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://studios.somerslab.ibm.com/eschool/projects/wp-content/themes/b4st-master/theme/js/b4st.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
+  ga('create', 'UA-63662560-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
   </body>
-
 </html>
